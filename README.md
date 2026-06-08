@@ -1,4 +1,4 @@
-# Project 1 — Set up Claude Code on a real project
+## Set up Claude Code on a real project
 
 > This is the first project of the Claude Code course. Finish **Units 1 and 2** before you start.
 
@@ -6,7 +6,7 @@ You'll take everything from Units 1 and 2 and put it to work on a real codebase:
 
 This is also the repository you'll keep building on as the course continues — each level's project adds to it, all the way to a shareable plugin at the end.
 
-## What you'll deliver
+### What you'll deliver
 
 On your branch of this repo:
 
@@ -18,7 +18,7 @@ On your branch of this repo:
 
 You are **not** changing the app code. The Express API below is here so you have a real project to set Claude up on.
 
-## What's already in the repo
+### What's already in the repo
 
 - `package.json` — scripts for `dev`, `test`, and `lint`
 - `server.js` — the entry point; starts the API
@@ -37,18 +37,18 @@ npm test         # runs the sample tests
 npm run lint     # checks code style
 ```
 
-## Before you start
+### Before you start
 
 1. Finish Units 1 and 2.
 2. Have Claude Code installed and signed in. Check with:
    ```
    claude --version
    ```
-3. Get this repo onto your machine (clone it, or open it from the platform), then open a terminal in the project folder.
+3. Open a terminal in the project folder.
 
-## Tasks
+### Tasks
 
-### 1. Get Claude running in the repo
+#### 1. Get Claude running in the repo
 
 Start Claude in the project folder:
 
@@ -58,7 +58,7 @@ claude
 
 Confirm you're signed in and Claude can see the project — ask "What's in this project?" and check the answer matches the files above.
 
-### 2. Generate a first CLAUDE.md
+#### 2. Generate a first CLAUDE.md
 
 Run:
 
@@ -68,7 +68,7 @@ Run:
 
 Let Claude read the codebase and draft a `CLAUDE.md`. (No `/init`? Ask: "Create a CLAUDE.md for this project.")
 
-### 3. Shape your CLAUDE.md
+#### 3. Shape your CLAUDE.md
 
 Edit the file so it has these four parts, each lean and specific:
 
@@ -79,7 +79,7 @@ Edit the file so it has these four parts, each lean and specific:
 
 Then trim it: cut anything obvious from the code, any one-off notes, and anything sensitive. Shorter is stronger.
 
-### 4. Add permission rules
+#### 4. Add permission rules
 
 Create `.claude/settings.json` (or run `/permissions` and add rules there) with at least:
 
@@ -101,20 +101,20 @@ Example shape:
 
 Commit `.claude/settings.json` so the rules are shared. The repo's `.gitignore` already keeps `.claude/settings.local.json` out — that one is personal and stays on your machine.
 
-### 5. Verify it works
+#### 5. Verify it works
 
 - Start a fresh session and run `/memory` — confirm your `CLAUDE.md` shows as loaded.
 - Run `/permissions` — confirm your allow / deny / ask rules are there.
 - Ask Claude something that relies on the file, such as "How do I run the tests here?", and check it answers from your `CLAUDE.md` without you explaining.
 
-### 6. Write your NOTES.md
+#### 6. Write your NOTES.md
 
 In a short `NOTES.md`, answer in a few sentences each:
 
 - What did you put in your `CLAUDE.md`, and what did you deliberately leave out, and why?
 - Which permission rules did you add, and what could go wrong without your deny rule?
 
-## Definition of done
+### Definition of done
 
 - [ ] `claude --version` runs (installed and signed in)
 - [ ] `CLAUDE.md` committed at the project root with a description, 2+ commands, 2+ conventions, and an architecture note
@@ -123,7 +123,7 @@ In a short `NOTES.md`, answer in a few sentences each:
 - [ ] `/memory` shows the `CLAUDE.md` loaded and `/permissions` shows your rules (mention this in `NOTES.md`)
 - [ ] `NOTES.md` committed with your reasoning
 
-## Submit
+### Submit
 
 1. Create a branch:
    ```
